@@ -20,7 +20,7 @@
     #wowSlider4-container1 {
         display: table;
         zoom: 1;
-        position: relative;
+       /* position: relative;*/
         width: 100%;
         max-width: 735px;
         max-height: 417px;
@@ -68,10 +68,10 @@
     }
     
     #wowSlider4-container1 .ws_images {
-        position: relative;
-        left: 0;
-        top: 0;
-        height: 100%;
+        position: absolute;
+        left: 13%;
+        top: 69%;
+       /* height: 100%;*/
         max-height: 417px;
         max-width: 735px;
         vertical-align: top;

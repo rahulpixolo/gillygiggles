@@ -126,15 +126,11 @@
                     text-align: center !important;
                 }
                 
-                .bgimg {
-                    position: absolute !important;
-                    margin-left: 0% !important;
-                    margin-top: 6% !important;
-                    width: 102% !important;
-                }
-                
                 .bgimg img {
-                    max-width: 99% !important;
+                    /* position: absolute !important;*/
+                    margin-top: -8% !important;
+                    margin-left: 1%!important;
+                    width: 100% !important;
                 }
                 
                 .slideradjust {
@@ -143,7 +139,7 @@
                 }
                 /*tab active*/
                 
-                @media only screen and (max-width 767px) {
+                @media only screen and (max-width 384px) {
                     .map iframe {
                         height: 300px !important;
                         width: 100% !important;
@@ -155,17 +151,37 @@
                     .textcenter {
                         text-align: center !important;
                     }
-                    .bgimg {
-                        width: auto !important;
-                        position: absolute !important;
+                    .bgimg img {
+                        margin-top: -40% !important;
+                        margin-left: -27%!important;
+                        width: 48% !important;
                     }
-                    wowSlider4-container1 .ws_images {
-                        position: relative;
-                        left: 71px;
-                        top: 2px;
-                        height: 100%;
-                        max-height: 259px;
-                        max-width: 458px;
+                    #wowSlider4-container1 {
+                        display: table;
+                        zoom: 1;
+                        /* position: relative;*/
+                        width: 100%;
+                        max-width: 735px;
+                        max-height: 417px;
+                        margin: 0px auto 0px;
+                        z-index: 90;
+                        text-align: left;
+                        /* reset align=center */
+                        font-size: 10px;
+                        text-shadow: none;
+                        /* fix some user styles */
+                        /* reset box-sizing (to boostrap friendly) */
+                        -webkit-box-sizing: content-box;
+                        -moz-box-sizing: content-box;
+                        box-sizing: content-box;
+                    }
+                    #wowSlider4-container1 .ws_images {
+                        position: absolute;
+                        left: 13%;
+                        top: 69%;
+                        /* height: 100%;*/
+                        max-height: 417px;
+                        max-width: 735px;
                         vertical-align: top;
                         border: none;
                         overflow: hidden;
