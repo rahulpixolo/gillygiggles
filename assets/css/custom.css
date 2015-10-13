@@ -119,6 +119,11 @@
   padding-bottom: 4% !important;
 }
 /*tab active*/
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto;
+}
 @media only screen and (max-width 384px) {
   .map iframe {
     height: 300px !important;

@@ -21,6 +21,9 @@
     <link rel="stylesheet" type="text/css" href="assets/engine1/style.css" />
     <script type="text/javascript" src="assets/engine1/jquery.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/engine/style.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -198,33 +201,33 @@
                                             </div>
                                         </div>
                                         <div class="tab-pane" id="wikipedia">
-                                            <div class="row">
-                                                <div class="col-md-offset-1 col-md-10 col-xs-offset-0 col-xs-12">
-                                                    <div id="wowSlider4-container1" class="slideradjust" style="    width: 90%;">
-                                                        <div class="ws_images " style="position:inherit">
-                                                            <ul>
-                                                                <li><img src="assets/data1/images/g1.jpg" alt="g1" title="g1" id="wows1_0" class="mediaimg" /></li>
-                                                                <li><img src="assets/data1/images/g2.jpg" alt="g2" title="g2" id="wows1_1" class="mediaimg" /></li>
-                                                                <li>
-                                                                    <a href=""><img src="assets/data1/images/g3.jpg" alt="" title="g3" id="wows1_2" class="mediaimg" /></a>
-                                                                </li>
-                                                                <li><img src="assets/data1/images/g4.jpg" alt="g4" title="g4" id="wows1_3" class="mediaimg" /></li>
-                                                            </ul>
+                                            <div class="" style="margin: 5%;">
+                                                <div id="myCarousel" class="carousel slide textcenter" data-ride="carousel" style="width:90%">
+                                                    <!--Wrapper for slides-->
+                                                    <div class="carousel-inner" role="listbox">
+                                                        <div class="item active">
+                                                            <img src="assets/data1/images/g1.jpg" style="width:100%" alt="Chania">
                                                         </div>
-                                                        
-                                                        <!--<div class="ws_script" style="position:absolute;left:-99%"></div>
-                                                        <div class="ws_shadow"></div>-->
-                                                    </div>
-                                                    <div style="width: 100%;
-    position: absolute;
-    margin-top: -450px;">
-                                                            <img src="assets/img/iphone.png" class="">
-                                                        </div>
-                                                </div>
-                                                <!--<div class="col-xs-12 textcenter bgimg">
-                                                    <img src="assets/img/iphone.png" class=" ">
-                                                </div>-->
 
+                                                        <div class="item">
+                                                            <img src="assets/data1/images/g2.jpg" style="width:100%" alt="Chania">
+                                                        </div>
+
+                                                        <div class="item">
+                                                            <img src="assets/data1/images/g3.jpg" style="width:100%" alt="Flower">
+                                                        </div>
+
+                                                        <div class="item">
+                                                            <img src="assets/data1/images/g4.jpg" style="width:100%" alt="Flower">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div style="    margin-left: -6%;
+    width: 90%;
+    position: absolute;
+    margin-top: -43%;">
+                                                    <img src="assets/img/iphone.png" class="">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -575,6 +578,7 @@
         ga('send', 'pageview');
     </script>
 
+
     <script>
         var tag = document.createElement('script');
         tag.src = "https://www.youtube.com/iframe_api";
@@ -653,6 +657,7 @@
                     me.ga('send', 'event', 'video', action, player._videoName, duration);
                 }
             }
+
         };
     </script>
 
