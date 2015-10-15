@@ -74,8 +74,8 @@
   background-image: none!important;
   border: 1px solid transparent!important;
   white-space: nowrap!important;
-  padding: 9px 14px!important;
-  font-size: 14px!important;
+  padding: 5px 14px!important;
+  font-size: 20px!important;
   line-height: 1.428!important;
   border-radius: 4px!important;
   -webkit-user-select: none!important;
@@ -84,7 +84,8 @@
   height: 300px !important;
 }
 .know h4 {
-  font-size: 22px;
+  font-size: 25px;
+  font-weight: 500;
 }
 .know h5 {
   font-size: 15px;
@@ -132,14 +133,14 @@
 .taba ul {
   margin-top: 12px;
   font-size: 22px;
-  line-height: 36px;
+  line-height: 25px;
   margin-bottom: 10px;
   font-weight: 500;
 }
 .taba p {
   margin-top: 12px;
-  font-size: 18px;
-  line-height: 36px;
+  font-size: 16px;
+  line-height: 23px;
   margin-bottom: 10px;
   font-weight: 500;
 }
@@ -153,7 +154,12 @@
 .nav > li > a:hover {
   color: #335D6B !important;
 }
-@media only screen and (max-width 740px) {
+.hor {
+  margin-left: 27% !important;
+  width: 46% !important;
+  margin-top: -3% !important;
+}
+@media (min-width: 320px) and (max-width: 767px) {
   .map iframe {
     height: 300px !important;
     width: 100% !important;
@@ -205,5 +211,45 @@
     width: 87%;
     position: absolute;
     margin-top: -41%;
+  }
+  .imgtab {
+    margin-top: -8%;
+  }
+  .copyright p {
+    margin: 0 !important;
+    font-size: 12px !important;
+    line-height: 3 !important;
+    color: #fff !important;
+    text-align: center !important;
+  }
+  .social-icon {
+    text-align: center;
+    /* font-size: 24px; */
+    /* line-height: 44px; */
+    color: #fff;
+    padding: 5px;
+    width: 100%;
+    margin-top: 0px !important;
+    font-size: 10px !important;
+    line-height: 0 !important;
+  }
+  .taba ul {
+    margin-top: 12px !important;
+    font-size: 14px !important;
+    line-height: 15px !important;
+    margin-bottom: -8px !important;
+    font-weight: 500 !important;
+  }
+  .taba p {
+    margin-top: -26px !important;
+    font-size: 10px !important;
+    line-height: 18px !important;
+    margin-bottom: 10px !important;
+    font-weight: 500 !important;
+  }
+  .taba .hor {
+    margin-left: 0px !important;
+    width: 100% !important;
+    margin-top: -4% !important;
   }
 }
