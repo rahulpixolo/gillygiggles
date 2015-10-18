@@ -25,10 +25,12 @@ jQuery(document).ready(function () {
     });
 
     /********tab********/
-   
+
     $(".tabclick").click(function () {
         $(".tab-pane").fadeOut();
         $("#" + $(this).attr('aria-controls')).fadeIn();
+        $(".activea").removeClass('activea');
+        $(this).parent().addClass('activea');
     });
 
 
