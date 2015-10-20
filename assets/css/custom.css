@@ -183,30 +183,39 @@
     color: #335D6B !important;
 }
 
-
-  .nav>  li.active,
-   .nav> li.active a:hover {
-        background: #fff;
-        color: #4c4c4c;
-    }
+.nav> li.active,
+.nav> li.active a:hover {
+    background: #fff;
+    color: #4c4c4c;
+}
 
 .hor {
-    margin-left: 27% !important;
-    width: 46% !important;
+    margin-left: 32% !important;
+    width: 34% !important;
     margin-top: -3% !important;
 }
 
-.activea{
+.activea {
     background-color: white;
     color: red;
 }
-.activea a{
+
+.activea a {
     background-color: white;
     color: #335D6B !important;
 }
 
+.help-container {
+    height: 83vh;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    background: #fff;
+    
+   
+}
+
 .anim-container {
-    height: 60vh;
+    height: 40vh;
     margin: 0 auto;
     padding-bottom: 60px;
     background: #fff;

@@ -5,11 +5,10 @@
           left: 0;
           top: 0;
       }
-      /* 50% {
-        left: 244px;
-        top: 100px;
-    }
-    */
+      50% {
+          left: 244px;
+          top: 100px;
+      }
       100% {
           left: 488px;
           top: 0;
@@ -19,12 +18,12 @@
   .stage {
       background: #fff;
       border-radius: 6px;
-      height: 60vh;
+      height: 40vh;
       position: relative;
       min-width: 538px;
   }
   
-  .stage:hover .ball {
+  .stage .ball {
       animation-name: slide;
       animation-duration: 10s;
       animation-timing-function: ease-in-out;
@@ -38,18 +37,33 @@
   }
   
   .ball {
-      background-image: url(/assets/img/kite.png);
+      /* background-image: url(/assets/img/kite.png);*/
       /*background: #2db34a;*/
       border-radius: 50%;
       height: 50px;
       position: absolute;
-      width: 100%;
+      /*width: 100%;*/
       img {
           width: 10%;
           margin-right: 71%;
           margin-top: 1%;
+          /*
           -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
           -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+*/
       }
+  }
+  
+  .help {
+      img {
+          margin-left: 40%;
+          width: 30%;
+          margin-top: 20%;
+      }
+  }
+  
+  .form-group-help {
+      margin-top: 25% !important;
+      width: 50%!important;
   }
