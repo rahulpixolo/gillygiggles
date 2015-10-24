@@ -32,6 +32,14 @@ jQuery(document).ready(function () {
         $(".activea").removeClass('activea');
         $(this).parent().addClass('activea');
     });
+     $(".tab-click-freebies").click(function () {
+        $(".tab-list-freebies").fadeOut();
+        $("#" + $(this).attr('aria-controls')).fadeIn();
+        $(".activea").removeClass('activea');
+        $(this).parent().addClass('activea');
+    });
+    $('#android').fadeIn();
+    $('#books').fadeIn();
 
 
     /***** Background slideshow *****/

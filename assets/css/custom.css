@@ -210,8 +210,6 @@
     margin: 0 auto;
     padding-bottom: 60px;
     background: #fff;
-    
-   
 }
 
 .anim-container {
@@ -275,6 +273,10 @@
         width: 87%;
         position: absolute;
         margin-top: -41%;
+    }
+    .star h4 {
+        text-align: center !important;
+        margin-top: -30%!important;
     }
     .imgtab {
         margin-top: -8%;

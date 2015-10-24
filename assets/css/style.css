@@ -187,6 +187,10 @@ textarea:focus {
 	height: 84px;
 	background: url(images/bar-bg.jpg) repeat-x;
 }
+#menu-freebies {
+	height: 84px;
+	
+}
 
 .table {
 	display: table;   /* Allow the centering to work */
@@ -589,7 +593,7 @@ textarea::-webkit-input-placeholder {
     border-radius: 14px;
 }
 
-.gallery-member h4 {
+/*.gallery-member h4 {
     position: absolute;
     bottom: 26px;
     left: 0px;
@@ -598,7 +602,7 @@ textarea::-webkit-input-placeholder {
     font-weight: 500;
     color: #fff;
     padding-right: 20px;
-}
+}*/
 
 .gallery-member .contact-details {
     position: absolute;
