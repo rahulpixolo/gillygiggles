@@ -28,18 +28,22 @@ jQuery(document).ready(function () {
 
     $(".tabclick").click(function () {
         $(".tab-pane").fadeOut();
-        $("#" + $(this).attr('aria-controls')).fadeIn();
+        $("#" + $(this).attr('aria-controls')).fadeIn("slow");
         $(".activea").removeClass('activea');
         $(this).parent().addClass('activea');
     });
-     $(".tab-click-freebies").click(function () {
-        $(".tab-list-freebies").fadeOut();
-        $("#" + $(this).attr('aria-controls')).fadeIn();
+     $(".tabclick1").click(function () {
+        $(".tab-pane1").fadeOut();
+        $("#" + $(this).attr('aria-controls')).fadeIn("slow");
         $(".activea").removeClass('activea');
         $(this).parent().addClass('activea');
     });
-    $('#android').fadeIn();
-    $('#books').fadeIn();
+   /* $("#freebies").show();*/
+    $("#freebies").css("display", "block");
+    $("#book").css("display", "block");
+     $("#activity").css("display", "none");
+     $("#colorpages").css("display", "none");
+    /*$('#book').fadeIn();*/
 
 
     /***** Background slideshow *****/

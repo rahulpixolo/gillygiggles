@@ -82,8 +82,11 @@
   padding-right: 20px !important;
 }
 .freebies ul {
-  display: flex;
+  display: inline-flex;
 }
 .freebies li {
   display: inline;
+}
+.freeimg img {
+  border-radius: 14px;
 }
