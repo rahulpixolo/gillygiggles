@@ -1,18 +1,35 @@
 <?php
-$name       = @trim(stripslashes($_POST['name'])); 
-$from       = @trim(stripslashes($_POST['email'])); 
-$contact    = @trim(stripslashes($_POST['contact'])); 
-$message    = @trim(stripslashes($_POST['message'])); 
-$to   		= 'rahul.pixolo@gmail.com';//replace with your email
 
-$headers   = array();
-$headers[] = "MIME-Version: 1.0";
-$headers[] = "Content-type: text/plain; charset=iso-8859-1";
-$headers[] = "From: {$name} <{$from}>";
-$headers[] = "Reply-To: <{$from}>";
-$headers[] = "Subject: {$subject}";
-$headers[] = "X-Mailer: PHP/".phpversion();
+header('Access-Control-Allow-Origin: *');
 
-mail($to, $contact, $message, $headers);
+      $name= $_GET['name'];
+    
+    if($_GET['email'] != '')
+    {
+        $name = $_GET['name']; 
+        $email = $_GET['email'];   
+        $contact= $_GET['contact'];
+        $message = $_GET['message'];
+        $email_from = $email;
+    };
+    
+print_r($name);
+    $email_to = 'adarsh.pixolo@gmail.com';
+    
+    
+    if (mail('adarsh.pixolo@gmail.com',"My subject","hey hello", 'From: <'.$email_from.'>')) { 
+            echo '<p>Your message has been sent!</p>';
+        } else { 
+            echo '<p>Something went wrong, go back and try again!</p>'; 
+        };
 
-die;
+    
+         $body = 'Name: ' . $name . "\n\n" . 'Email: ' . $email . "\n\n" . 'contact: ' . $contact. "\n\n" . 'Message: ' . $message;
+        
+        
+        //print_r(mail($email_to, "INQUIRY", $body, 'From: <'.$email_from.'>'));
+        
+     return true;
+     die;
+
+?>
